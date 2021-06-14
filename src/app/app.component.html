@@ -1,0 +1,23 @@
+<div class="row">
+  <table class="table table-striped">
+      <thead>
+          <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Fecha Nacimiento</th>
+              <th scope="col">Estado Civil</th>
+              <th scope="col">Activo</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let cliente of clientes">
+              <td>{{ cliente.id}}</td>
+              <td>{{ cliente.nombre }} </td>
+              <td>{{ cliente.fechaNacimiento }}</td>
+              <td>{{ cliente.estadoCivil }}</td>
+              <td>{{ cliente.activo }}</td>
+              <td></td>
+          </tr>
+      </tbody>
+  </table>
+  </div>
